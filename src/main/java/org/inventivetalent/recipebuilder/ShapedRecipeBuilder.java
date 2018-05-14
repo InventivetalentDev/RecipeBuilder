@@ -26,8 +26,18 @@ public class ShapedRecipeBuilder extends RecipeBuilder {
 	 *
 	 * @param result result {@link ItemStack}
 	 */
+	@Deprecated
 	public ShapedRecipeBuilder(ItemStack result) {
 		super(result);
+	}
+
+	/**
+	 * Constructs a new ShapedRecipeBuilder for the specified result
+	 *
+	 * @param result result {@link ItemStack}
+	 */
+	public ShapedRecipeBuilder(NamespacedKey key, ItemStack result) {
+		super(key, result);
 	}
 
 	@Override

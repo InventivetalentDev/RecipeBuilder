@@ -14,8 +14,13 @@ public abstract class RecipeBuilder {
 	protected RecipeBuilder() {
 	}
 
+	@Deprecated
 	protected RecipeBuilder(ItemStack result) {
 		forResult(result);
+	}
+
+	protected RecipeBuilder(NamespacedKey key, ItemStack result) {
+		forResult(key, result);
 	}
 
 	@Deprecated

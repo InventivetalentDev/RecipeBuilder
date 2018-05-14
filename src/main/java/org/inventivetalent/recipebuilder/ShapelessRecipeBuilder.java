@@ -26,8 +26,18 @@ public class ShapelessRecipeBuilder extends RecipeBuilder {
 	 *
 	 * @param result result {@link ItemStack}
 	 */
+	@Deprecated
 	public ShapelessRecipeBuilder(ItemStack result) {
 		super(result);
+	}
+
+	/**
+	 * Constructs a new ShapelessRecipeBuilder for the specified result
+	 *
+	 * @param result result {@link ItemStack}
+	 */
+	public ShapelessRecipeBuilder(NamespacedKey key, ItemStack result) {
+		super(key, result);
 	}
 
 	@Override
@@ -45,8 +55,7 @@ public class ShapelessRecipeBuilder extends RecipeBuilder {
 	}
 
 	/**
-	 * Loads the recipe from a {@link ConfigurationSection}
-	 * See <link>https://paste.inventivetalent.org/irorulawev.yml</link> for an example configuration
+	 * Loads the recipe from a {@link ConfigurationSection} See <link>https://paste.inventivetalent.org/irorulawev.yml</link> for an example configuration
 	 *
 	 * @param section {@link ConfigurationSection}
 	 * @return the ShapelessRecipeBuilder
