@@ -1,0 +1,4 @@
+name: RecipeBuilder
+main: org.inventivetalent.recipebuilder.RecipeBuilderPlugin
+author: inventivetalent
+version: ${project.version}

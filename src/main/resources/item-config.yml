@@ -1,0 +1,28 @@
+recipe:
+  shaped:
+    result:
+      type: "IRON_INGOT"
+      meta:
+        display: "I am a test item"
+    shape:
+    - "aba"
+    - "bab"
+    - "aba"
+    ingredients:
+      a:
+        type: "STONE"
+        durability: 0
+      b:
+        type: "GRASS"
+  shapeless:
+    result:
+      type: "STONE"
+    ingredients:
+      a:   #The keys don't matter for shapeless recipes, but are required for the configuration structure
+        type: "DIRT"
+      b:
+        type: "GLASS"
+      c:
+        type: "IRON_INGOT"
+        meta:
+          display: "I am a test item"
